@@ -242,6 +242,7 @@ section.banner {
 
 .email .icon-wrapper {
     background-color: var(--light-red-color);
+    border: 1px solid var(--black-color);
     animation: move-icon 6s infinite;
 }
 @keyframes move-icon {
@@ -336,7 +337,6 @@ section.banner {
 
 @media(min-width: 1024px) and (max-width: 1079px) {    
     .banner-title { font-size: 1.7rem; }
-
     .banner-subtitle { font-size: 1.03rem; }
 }
 
