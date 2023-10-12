@@ -12,7 +12,9 @@ body {
 }
 
 .books-item {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border: 2px solid var(--white-color);
+    box-shadow: 0 0 3px var(--black-color), 0 0 0 2px var(--black-color), 0 0 0 2px var(--black-color);
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -51,6 +53,7 @@ body {
     min-height: 238px;
     cursor: pointer;
     margin-right: 1rem;
+    border-right: 1px solid var(--white-color);
     transition: all .5s;
 }
 
@@ -122,7 +125,7 @@ body {
     ul.scroll-nav.snb li:first-child, ul.scroll-nav.snb li:nth-child(2) { margin-right: 0rem; }
 }
 
-@media(max-width: 420px) {    
+@media(max-width: 490px) {    
     .books-item {
         flex-direction: column;
         justify-content: center;
@@ -142,7 +145,10 @@ body {
         100% { transform: translateY(0px); }
     }
 
-    .books-img { margin-right: 0rem; }
+    .books-img {
+        margin-right: 0rem;
+        border: 1px solid var(--white-color);
+    }
 
     .books-text {
         text-align: center;
@@ -370,6 +376,7 @@ section.chapters { background-color: var(--light-blue-color); }
 
 .chapters-item {
     border: 2px solid var(--black-color);
+    box-shadow: 0 0 3px var(--white-color), 0 0 0 2px var(--white-color), 0 0 0 2px var(--white-color);
     border-radius: 5px;
     padding: 1rem;
     background-color: var(--mid-white-color);
@@ -414,7 +421,8 @@ section.chapters { background-color: var(--light-blue-color); }
 }
 
 .series-item {
-    border: 2px solid var(--black-color);
+    border: 2px solid var(--white-color);
+    box-shadow: 0 0 3px var(--black-color), 0 0 0 2px var(--black-color), 0 0 0 2px var(--black-color);
     border-radius: 5px;
     padding: 1rem;
     background-color: var(--light-blue-color);

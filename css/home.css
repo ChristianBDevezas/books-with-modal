@@ -18,7 +18,7 @@ section.banner {
     font-size: 1.77rem;
     font-family: 'Cabin', sans-serif;
     color: var(--mid-white-color);
-    text-shadow: -1px -1px 0 var(--black-color), 1px -1px 0 var(--black-color), -1px 1px 0 var(--black-color), 1px 1px 0 var(--black-color);
+    text-shadow: -1px -1px 0 var(--black-color), 1px -1px 0 var(--black-color), -1px 1px 0 var(--black-color), 2px 2px 0 var(--black-color);
     letter-spacing: 2px;
     word-spacing: 5px;
     text-align: center;
@@ -49,7 +49,7 @@ section.banner {
     font-family: 'Open Sans', sans-serif;
     color: var(--mid-white-color);
     letter-spacing: 1px;
-    line-height: 1.57;
+    line-height: 1.48;
     text-align: justify;
     margin-bottom: 1rem;
     text-shadow: 1px -1px 0 rgba(0, 0, 0, .25), -1px 1px 0 rgba(0, 0, 0, .25), 1px 1px 0 rgba(0, 0, 0, .25);
@@ -107,7 +107,30 @@ section.banner {
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border: 2px solid var(--black-color);
-    box-shadow: -2px -2px 4px white;
+    box-shadow: -3px -3px 4px var(--white-color);
+    animation: switch-shadow 7s 2s ease-in-out infinite;
+}
+@keyframes switch-shadow {
+    0% {
+        border: 2px solid var(--black-color);
+        box-shadow: -3px -3px 4px var(--white-color);
+    }
+    20% {
+        border: 2px solid var(--black-color);
+        box-shadow: -3px -3px 4px var(--white-color);
+    }
+    40% {
+        border: 2px solid var(--white-color);
+        box-shadow: 4px 4px 4px var(--black-color);
+    }
+    70% {
+        border: 2px solid var(--black-color);
+        box-shadow: -3px -3px 4px var(--white-color);
+    }
+    100% {
+        border: 2px solid var(--black-color);
+        box-shadow: -3px -3px 4px var(--white-color);
+    }
 }
 
 .banner-buttons {
@@ -124,6 +147,7 @@ section.banner {
     padding: .3rem .25rem;
     background: rgba(0, 0, 0, .8);
     border-radius: 7px;
+    border: 1px solid var(--white-color);
     width: 7.3rem;
     margin: 0 auto;
     /* min-width: 15rem; */
@@ -177,7 +201,8 @@ section.banner {
 .card-btn:hover .card-btn-contact { color: var(--blue-color); }
 
 .card-social {
-    margin: .1rem 0 0 0rem;
+    /* margin: .1rem 0 0 0rem; */
+    margin: 0;
     background-color: var(--white-color);
     display: flex;
     align-items: center;
@@ -234,6 +259,7 @@ section.banner {
 
 .contact-details { text-align: left; }
 
+.contact-details p { font-size: 1rem; }
 .contact-details p:first-child { margin-bottom: 4px; }
 
 .banner-btn {
