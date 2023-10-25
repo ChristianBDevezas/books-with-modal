@@ -335,7 +335,7 @@ ul.scroll-nav li a:hover::before, ul.scroll-nav li a:hover::after { width: 50%; 
     .side-nav-change {
         /* width: 7.35rem; */
         /* max-height: 54.3vh; */
-        height: 50vh;
+        height: 16vh;
         width: 100%;
         opacity: 1;
     }
